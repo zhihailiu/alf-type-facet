@@ -35,5 +35,14 @@
         <property name="nodeLocatorService" ref="nodeLocatorService" />
     </bean>
 
+    <bean id="facet.typeFacetLabelDisplayHandler"
+        class="com.acme.facet.TypeFacetLabelDisplayHandler"
+        parent="baseFacetLabelDisplayHandler">
+        <constructor-arg>
+            <set>
+                <value>TYPE</value>
+            </set>
+        </constructor-arg>
+    </bean>
     
 </beans>
